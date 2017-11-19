@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<svg width="960" height="500"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="build/d3-sankey.js"></script>
+<script>
+
+  var svg = d3.select("svg"),
+      width = +svg.attr("width"),
+      height = +svg.attr("height");
+
+  var formatNumber = d3.format(",.0f"),
+      format = function(d) { return formatNumber(d) + " TWh"; },
+      color = d3.scaleOrdinal(d3.schemeCategory10);
+
+  var sankey = d3.sankey()
+      .nodeAlign(d3.sankeyLeft)
+      .nodeWidth(15)
+      .nodePadding(10)
+      .extent([[1, 1], [width - 1, height - 6]]);
+
+  var link = svg.append("g")
+      .attr("class", "links")
+      .attr("fill", "none")
+      .attr("stroke", "#000")
+      .attr("stroke-opacity", 0.2)
+      .selectAll("path");
+
+  var node = svg.append("g")
+      .attr("class", "nodes")
+      .attr("font-family", "sans-serif")
+      .attr("font-size", 10)
+      .selectAll("g");
+
+  // 1. Specify the height of each node
+  //    this is done - sankey.js line 138
+  // 2. I'd like you to modify sankey.js so that nodes with depth=0 after computeNodeDepths
+  //    stay in the same order they are listed in the json. For example, in the exmaple dna.json,
+  //    nodes labeled Chromosome 1, Chromosome 2, and Chromosome 3 would stay in that order:
+  //    1 on top, then 2 in the middle, then 3. The match nodes can appear in any order.
+  // 3. Specify the height of each link
+  //    Sankey already works this way, so this is done
+  // 4. Specify the link's vertical position at the source and target nodes.
+  //    d3-sankey connects the links to the nodes starting from the top of the node, without any gaps
+  //    you'll notice in the example dna.json, I've added two additional parameters to the links: sourcePos and targetPos
+  //    These parameters dictate exactly where (vertically) the links attach to the source and target nodes
+  //    For example, node[0] has a value of 20, and has two links emanating from it:
+  //    {"source":0,"target":3,"value":5,"sourcePos":2,"targetPos":0},
+  //    {"source":0,"target":3,"value":2,"sourcePos":5,"targetPos":5},
+  //    This means that I want the first link's y0 position to be 10% down from the top of node[0].
+  //    That is, I want link[0].y0 = (node[0].y0 + (node[0].y1 - node[0].y0) * link[0].sourcePos / node[0].value
+  //    And link[1].y0 should be 25% down from the top of node[0].
+  //    Link[0] should enter the target node at the top of the target node, since targetPos=0
+  //    And link[1] should enter the target node immediately below link[0], since link[1].targetPos = link[0].targetPos + link[0].value
+  //    So in computeLinkBreadths, you need to set link.y0 and link.y1 based upon sourcePos and targetPos respectively
+
+  d3.json("dna.json", function(error, dna) {
+    if (error) throw error;
+
+    sankey(dna);
+
+    link = link
+        .data(dna.links)
+        .enter().append("path")
+        .attr("d", d3.sankeyLinkHorizontal())
+        .attr("stroke-width", function(d) { return Math.max(1, d.width); });
+
+    link.append("title")
+        .text(function(d) { return d.source.name + " → " + d.target.name + "\n" + format(d.value); });
+
+    node = node
+        .data(dna.nodes)
+        .enter().append("g");
+
+    node.append("rect")
+        .attr("x", function(d) { return d.x0; })
+        .attr("y", function(d) { return d.y0; })
+        .attr("height", function(d) { return d.y1 - d.y0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .attr("fill", function(d) { return color(d.name.replace(/ .*/, "")); })
+        .attr("stroke", "#000");
+
+    node.append("text")
+        .attr("x", function(d) { return d.x0 - 6; })
+        .attr("y", function(d) { return (d.y1 + d.y0) / 2; })
+        .attr("dy", "0.35em")
+        .attr("text-anchor", "end")
+        .text(function(d) { return d.name; })
+        .filter(function(d) { return d.x0 < width / 2; })
+        .attr("x", function(d) { return d.x1 + 6; })
+        .attr("text-anchor", "start");
+
+    node.append("title")
+        .text(function(d) { return d.name + "\n" + format(d.value); });
+  });
+
+</script>
+</body>
+</html>

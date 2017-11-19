@@ -134,7 +134,8 @@ export default function() {
     graph.nodes.forEach(function(node) {
       node.value = Math.max(
         sum(node.sourceLinks, value),
-        sum(node.targetLinks, value)
+        sum(node.targetLinks, value),
+        typeof node.value !== 'undefined' ? node.value : 0
       );
     });
   }
