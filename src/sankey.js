@@ -62,17 +62,46 @@ export default function () {
   function sankey() {
     var graph = { nodes: nodes.apply(null, arguments), links: links.apply(null, arguments) };
 
+    setGeneratedIds(graph);  //added
     computeNodeLinks(graph);
     computeNodeValues(graph);
     computeNodeDepths(graph);
-    setOrderedPositions(graph);
-
     computeNodeBreadths(graph, iterations);
+    //setOrderedPositions(graph);  //added
     computeLinkBreadths(graph);
-
+    recomputeLinkPos(graph);    //added
     return graph;
   }
 
+  function setGeneratedIds(graph) {
+    graph.nodes.forEach((d, i) => {
+      d.generatedID = 'ID' + i;
+    });
+  }
+
+  function recomputeLinkPos(graph) {
+    graph.links.forEach(l => {
+      var linkHeight = Math.max(1, l.width)
+      var nodeHeight = l.source.y1 - l.source.y0;
+      var diff = l.sourcePos / l.source.value * nodeHeight + linkHeight / 2;
+      l.y0 = l.source.y0 + diff;
+    });
+
+    var targetNodeLinkProportions = {};
+    graph.links.forEach(l => {
+      if (!targetNodeLinkProportions[l.target.generatedID]) targetNodeLinkProportions[l.target.generatedID] = 0;
+      targetNodeLinkProportions[l.target.generatedID] += l.value;
+
+    })
+    graph.links.forEach(l => {
+      var linkHeight = Math.max(1, l.width);
+      var nodeHeight = l.target.y1 - l.target.y0;
+      var diff = l.targetPos / targetNodeLinkProportions[l.target.generatedID] * nodeHeight + linkHeight / 2;
+      l.y1 = l.target.y0 + diff;
+    });
+  }
+
+  // not needed if we not relax from right to left
   function setOrderedPositions(graph) {
     var startPos = 0;
     graph.nodes.filter(d => d.depth == 0)
@@ -200,8 +229,9 @@ export default function () {
     //
     initializeNodeBreadth();
     resolveCollisions();
+
     for (var alpha = 1, n = iterations; n > 0; --n) {
-      relaxRightToLeft(alpha *= 0.99);
+      //relaxRightToLeft(alpha *= 0.99);
       resolveCollisions();
       relaxLeftToRight(alpha);
       resolveCollisions();
