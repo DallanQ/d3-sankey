@@ -1,0 +1,24 @@
+{
+  "name": "d3-sankey",
+  "prettyName": "d3-sankey",
+  "authors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rootscity/d3-asankey"
+  },
+  "description": "sankey chart for d3",
+  "main": [
+    "build/d3-sankey.js",
+  ],
+  "keywords": [],
+  "license": "",
+  "homepage": "https://github.com/rootscity/d3-sankey/",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test"
+    "img"
+  ],
+  "dependencies": {
+  }
+}
