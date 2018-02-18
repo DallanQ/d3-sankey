@@ -69,7 +69,7 @@ export default function () {
     computeNodeBreadths(graph, iterations);
     //setOrderedPositions(graph);  //added
     computeLinkBreadths(graph);
-    recomputeLinkPos(graph);    //added
+    recomputeLinkPosAndArrangeNodes(graph); // added
     return graph;
   }
 
@@ -78,27 +78,70 @@ export default function () {
       d.generatedID = 'ID' + i;
     });
   }
-
-  function recomputeLinkPos(graph) {
+  function recomputeLinkPosAndArrangeNodes(graph) {
+    //Modify link start positions
     graph.links.forEach(l => {
-      var linkHeight = Math.max(1, l.width)
+      var linkHeight = Math.max(1, l.width);
       var nodeHeight = l.source.y1 - l.source.y0;
       var diff = l.sourcePos / l.source.value * nodeHeight + linkHeight / 2;
       l.y0 = l.source.y0 + diff;
     });
 
+    //Store each link's target node proportions values incremental sum
     var targetNodeLinkProportions = {};
     graph.links.forEach(l => {
       if (!targetNodeLinkProportions[l.target.generatedID]) targetNodeLinkProportions[l.target.generatedID] = 0;
       targetNodeLinkProportions[l.target.generatedID] += l.value;
+    });
 
-    })
+    // Modify link's end positions
     graph.links.forEach(l => {
       var linkHeight = Math.max(1, l.width);
       var nodeHeight = l.target.y1 - l.target.y0;
       var diff = l.targetPos / targetNodeLinkProportions[l.target.generatedID] * nodeHeight + linkHeight / 2;
       l.y1 = l.target.y0 + diff;
     });
+
+
+    //Store  ordering of nodes based on new link ordering
+    graph.nodes.forEach(node => {
+      var neighbourSourceLinks = node.sourceLinks
+        .filter(sl => (sl.target.level - 1) == node.level)
+        .$orderBy(d => d.y0);
+      neighbourSourceLinks.forEach((sourceLink, i) => {
+        sourceLink.target.orderNumber = i + 1;
+      })
+    });
+
+
+    // Replace target node positions 
+    // Replace target and source link positions based on ordered result
+    graph.nodes.forEach(node => {
+      var oneLevelConnectedNodes = node.sourceLinks
+        .filter(sl => (sl.target.level - 1) == node.level)
+        .map(d => d.target);
+      var startNodeY = d3.min(oneLevelConnectedNodes, d => d.y0);
+      oneLevelConnectedNodes.$orderBy(d => d.orderNumber);
+      //Replace positions
+      oneLevelConnectedNodes.forEach(d => {
+        var height = d.y1 - d.y0;
+        var change = startNodeY - d.y0;
+        d.y0 = startNodeY;
+        d.y1 = startNodeY + height;
+        d.targetLinks.forEach(d => {
+          d.y1 += change;
+        })
+        d.sourceLinks.forEach(d => {
+          d.y0 += change;
+        })
+        startNodeY += (py + height);
+      });
+
+      // 
+
+
+    })
+
   }
 
   // not needed if we not relax from right to left
@@ -323,6 +366,18 @@ export default function () {
         link.y1 = y1 + link.width / 2, y1 += link.width;
       });
     });
+  }
+
+  Array.prototype.$orderBy = function (func) {
+    this.sort((a, b) => {
+      var a = func(a);
+      var b = func(b);
+      if (typeof a === 'string' || a instanceof String) {
+        return a.localeCompare(b);
+      }
+      return a - b;
+    });
+    return this;
   }
 
   return sankey;
