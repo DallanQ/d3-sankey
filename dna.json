@@ -1,27 +1,2010 @@
 {
-  "nodes":[
-    {"name":"Chromosome 1","value": 20},
-    {"name":"Chromosome 2","value": 25},
-    {"name":"Chromosome 3","value": 15},
-    {"name":"Match 1"},
-    {"name":"Match 2"},
-    {"name":"Match 3"},
-    {"name":"Match 4"},
-    {"name":"Match 5"},
-    {"name":"Match 6"},
-    {"name":"Match 7"}
+  "links": [
+    {
+      "value": 83767891,
+      "targetPos": 0,
+      "sourcePos": 65343051,
+      "target": 22,
+      "source": 2
+    },
+    {
+      "value": 50397553,
+      "targetPos": 0,
+      "sourcePos": 21699475,
+      "target": 23,
+      "source": 12
+    },
+    {
+      "value": 10180767,
+      "targetPos": 0,
+      "sourcePos": 73587124,
+      "target": 24,
+      "source": 22
+    },
+    {
+      "value": 38397183,
+      "targetPos": 10180767,
+      "sourcePos": 149110942,
+      "target": 24,
+      "source": 2
+    },
+    {
+      "value": 54948965,
+      "targetPos": 0,
+      "sourcePos": 70817475,
+      "target": 25,
+      "source": 7
+    },
+    {
+      "value": 64393349,
+      "targetPos": 0,
+      "sourcePos": 97379352,
+      "target": 26,
+      "source": 0
+    },
+    {
+      "value": 51520135,
+      "targetPos": 0,
+      "sourcePos": 12873214,
+      "target": 27,
+      "source": 26
+    },
+    {
+      "value": 5627544,
+      "targetPos": 51520135,
+      "sourcePos": 161772701,
+      "target": 27,
+      "source": 0
+    },
+    {
+      "value": 33432701,
+      "targetPos": 11960215,
+      "sourcePos": 0,
+      "target": 28,
+      "source": 25
+    },
+    {
+      "value": 11960215,
+      "targetPos": 0,
+      "sourcePos": 58857260,
+      "target": 28,
+      "source": 7
+    },
+    {
+      "value": 29149636,
+      "targetPos": 0,
+      "sourcePos": 40786479,
+      "target": 29,
+      "source": 16
+    },
+    {
+      "value": 54089586,
+      "targetPos": 0,
+      "sourcePos": 70643537,
+      "target": 30,
+      "source": 5
+    },
+    {
+      "value": 24646738,
+      "targetPos": 0,
+      "sourcePos": 45937043,
+      "target": 31,
+      "source": 17
+    },
+    {
+      "value": 34892439,
+      "targetPos": 0,
+      "sourcePos": 191739472,
+      "target": 32,
+      "source": 1
+    },
+    {
+      "value": 30693003,
+      "targetPos": 0,
+      "sourcePos": 13715365,
+      "target": 33,
+      "source": 10
+    },
+    {
+      "value": 51522402,
+      "targetPos": 4999349,
+      "sourcePos": 0,
+      "target": 34,
+      "source": 27
+    },
+    {
+      "value": 44234014,
+      "targetPos": 0,
+      "sourcePos": 34091451,
+      "target": 35,
+      "source": 3
+    },
+    {
+      "value": 26267854,
+      "targetPos": 0,
+      "sourcePos": 19125062,
+      "target": 36,
+      "source": 28
+    },
+    {
+      "value": 19445809,
+      "targetPos": 26267854,
+      "sourcePos": 33432701,
+      "target": 36,
+      "source": 25
+    },
+    {
+      "value": 18976407,
+      "targetPos": 0,
+      "sourcePos": 81632477,
+      "target": 37,
+      "source": 13
+    },
+    {
+      "value": 20135541,
+      "targetPos": 0,
+      "sourcePos": 220627629,
+      "target": 38,
+      "source": 0
+    },
+    {
+      "value": 36928073,
+      "targetPos": 0,
+      "sourcePos": 12834157,
+      "target": 39,
+      "source": 11
+    },
+    {
+      "value": 46219041,
+      "targetPos": 0,
+      "sourcePos": 10302710,
+      "target": 40,
+      "source": 34
+    },
+    {
+      "value": 5442797,
+      "targetPos": 46219041,
+      "sourcePos": 51522402,
+      "target": 40,
+      "source": 27
+    },
+    {
+      "value": 23238405,
+      "targetPos": 0,
+      "sourcePos": 5598291,
+      "target": 41,
+      "source": 23
+    },
+    {
+      "value": 30259990,
+      "targetPos": 0,
+      "sourcePos": 92831231,
+      "target": 42,
+      "source": 8
+    },
+    {
+      "value": 21813706,
+      "targetPos": 0,
+      "sourcePos": 1424699,
+      "target": 43,
+      "source": 41
+    },
+    {
+      "value": 8289617,
+      "targetPos": 21813706,
+      "sourcePos": 28836696,
+      "target": 43,
+      "source": 23
+    },
+    {
+      "value": 11063627,
+      "targetPos": 0,
+      "sourcePos": 15434720,
+      "target": 44,
+      "source": 21
+    },
+    {
+      "value": 40618173,
+      "targetPos": 18903193,
+      "sourcePos": 0,
+      "target": 45,
+      "source": 40
+    },
+    {
+      "value": 10302710,
+      "targetPos": 8600483,
+      "sourcePos": 0,
+      "target": 45,
+      "source": 34
+    },
+    {
+      "value": 7873865,
+      "targetPos": 726618,
+      "sourcePos": 0,
+      "target": 45,
+      "source": 26
+    },
+    {
+      "value": 42325872,
+      "targetPos": 0,
+      "sourcePos": 21550846,
+      "target": 46,
+      "source": 9
+    },
+    {
+      "value": 35836583,
+      "targetPos": 0,
+      "sourcePos": 73590100,
+      "target": 47,
+      "source": 4
+    },
+    {
+      "value": 24906062,
+      "targetPos": 0,
+      "sourcePos": 368704,
+      "target": 48,
+      "source": 33
+    },
+    {
+      "value": 8936673,
+      "targetPos": 6833788,
+      "sourcePos": 0,
+      "target": 49,
+      "source": 43
+    },
+    {
+      "value": 6833788,
+      "targetPos": 0,
+      "sourcePos": 189202,
+      "target": 49,
+      "source": 23
+    },
+    {
+      "value": 10834903,
+      "targetPos": 0,
+      "sourcePos": 344857,
+      "target": 50,
+      "source": 16
+    },
+    {
+      "value": 14951357,
+      "targetPos": 0,
+      "sourcePos": 13523286,
+      "target": 51,
+      "source": 20
+    },
+    {
+      "value": 25076927,
+      "targetPos": 0,
+      "sourcePos": 10966346,
+      "target": 52,
+      "source": 2
+    },
+    {
+      "value": 26297074,
+      "targetPos": 0,
+      "sourcePos": 31505941,
+      "target": 53,
+      "source": 14
+    },
+    {
+      "value": 23051217,
+      "targetPos": 0,
+      "sourcePos": 133913222,
+      "target": 54,
+      "source": 5
+    },
+    {
+      "value": 10765813,
+      "targetPos": 13123740,
+      "sourcePos": 0,
+      "target": 55,
+      "source": 37
+    },
+    {
+      "value": 13123740,
+      "targetPos": 0,
+      "sourcePos": 68508737,
+      "target": 55,
+      "source": 13
+    },
+    {
+      "value": 14138122,
+      "targetPos": 0,
+      "sourcePos": 118431145,
+      "target": 56,
+      "source": 10
+    },
+    {
+      "value": 35172669,
+      "targetPos": 0,
+      "sourcePos": 74836081,
+      "target": 57,
+      "source": 10
+    },
+    {
+      "value": 22041970,
+      "targetPos": 0,
+      "sourcePos": 8061353,
+      "target": 58,
+      "source": 43
+    },
+    {
+      "value": 13271240,
+      "targetPos": 22041970,
+      "sourcePos": 37126313,
+      "target": 58,
+      "source": 23
+    },
+    {
+      "value": 24464493,
+      "targetPos": 0,
+      "sourcePos": 22263601,
+      "target": 59,
+      "source": 5
+    },
+    {
+      "value": 11512674,
+      "targetPos": 0,
+      "sourcePos": 35197309,
+      "target": 60,
+      "source": 20
+    },
+    {
+      "value": 14671499,
+      "targetPos": 0,
+      "sourcePos": 6475543,
+      "target": 61,
+      "source": 17
+    },
+    {
+      "value": 34292915,
+      "targetPos": 304742,
+      "sourcePos": 0,
+      "target": 62,
+      "source": 35
+    },
+    {
+      "value": 29605095,
+      "targetPos": 0,
+      "sourcePos": 115746236,
+      "target": 63,
+      "source": 1
+    },
+    {
+      "value": 6898769,
+      "targetPos": 8580860,
+      "sourcePos": 0,
+      "target": 64,
+      "source": 39
+    },
+    {
+      "value": 8580860,
+      "targetPos": 0,
+      "sourcePos": 4253297,
+      "target": 64,
+      "source": 11
+    },
+    {
+      "value": 44318211,
+      "targetPos": 0,
+      "sourcePos": 15203155,
+      "target": 65,
+      "source": 45
+    },
+    {
+      "value": 5054242,
+      "targetPos": 44318211,
+      "sourcePos": 40618173,
+      "target": 65,
+      "source": 40
+    },
+    {
+      "value": 13752601,
+      "targetPos": 21885953,
+      "sourcePos": 0,
+      "target": 66,
+      "source": 32
+    },
+    {
+      "value": 21885953,
+      "targetPos": 0,
+      "sourcePos": 169853519,
+      "target": 66,
+      "source": 1
+    },
+    {
+      "value": 17900074,
+      "targetPos": 0,
+      "sourcePos": 11249562,
+      "target": 67,
+      "source": 29
+    },
+    {
+      "value": 11221037,
+      "targetPos": 0,
+      "sourcePos": 147516467,
+      "target": 68,
+      "source": 6
+    },
+    {
+      "value": 26299580,
+      "targetPos": 0,
+      "sourcePos": 19414083,
+      "target": 69,
+      "source": 36
+    }
   ],
-  "links":[
-    {"source":0,"target":3,"value":5,"sourcePos":2,"targetPos":0},
-    {"source":0,"target":3,"value":2,"sourcePos":10,"targetPos":5},
-    {"source":1,"target":3,"value":9,"sourcePos":2,"targetPos":7},
-    {"source":1,"target":4,"value":3,"sourcePos":15,"targetPos":0},
-    {"source":1,"target":5,"value":2,"sourcePos":20,"targetPos":0},
-    {"source":2,"target":5,"value":3,"sourcePos":0,"targetPos":2},
-    {"source":2,"target":6,"value":5,"sourcePos":5,"targetPos":0},
-    {"source":2,"target":8,"value":1,"sourcePos":12,"targetPos":0},
-    {"source":3,"target":7,"value":1,"sourcePos":0,"targetPos":0},
-    {"source":5,"target":7,"value":1,"sourcePos":2,"targetPos":1},
-    {"source":7,"target":9,"value":0.5,"sourcePos":1,"targetPos":0}
+  "nodes": [
+    {
+      "items": [],
+      "ix": 0,
+      "chr": 1,
+      "start": 0,
+      "end": 248956422,
+      "value": 248956422,
+      "level": 1,
+      "name": "Chromosome 1",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 1,
+      "chr": 2,
+      "start": 0,
+      "end": 242193529,
+      "value": 242193529,
+      "level": 1,
+      "name": "Chromosome 2",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 2,
+      "chr": 3,
+      "start": 0,
+      "end": 198295559,
+      "value": 198295559,
+      "level": 1,
+      "name": "Chromosome 3",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 3,
+      "chr": 4,
+      "start": 0,
+      "end": 190214555,
+      "value": 190214555,
+      "level": 1,
+      "name": "Chromosome 4",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 4,
+      "chr": 5,
+      "start": 0,
+      "end": 181538259,
+      "value": 181538259,
+      "level": 1,
+      "name": "Chromosome 5",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 5,
+      "chr": 6,
+      "start": 0,
+      "end": 170805979,
+      "value": 170805979,
+      "level": 1,
+      "name": "Chromosome 6",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 6,
+      "chr": 7,
+      "start": 0,
+      "end": 159345973,
+      "value": 159345973,
+      "level": 1,
+      "name": "Chromosome 7",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 7,
+      "chr": 8,
+      "start": 0,
+      "end": 145138636,
+      "value": 145138636,
+      "level": 1,
+      "name": "Chromosome 8",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 8,
+      "chr": 9,
+      "start": 0,
+      "end": 138394717,
+      "value": 138394717,
+      "level": 1,
+      "name": "Chromosome 9",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 9,
+      "chr": 10,
+      "start": 0,
+      "end": 133797422,
+      "value": 133797422,
+      "level": 1,
+      "name": "Chromosome 10",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 10,
+      "chr": 11,
+      "start": 0,
+      "end": 135086622,
+      "value": 135086622,
+      "level": 1,
+      "name": "Chromosome 11",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 11,
+      "chr": 12,
+      "start": 0,
+      "end": 133275309,
+      "value": 133275309,
+      "level": 1,
+      "name": "Chromosome 12",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 12,
+      "chr": 13,
+      "start": 0,
+      "end": 114364328,
+      "value": 114364328,
+      "level": 1,
+      "name": "Chromosome 13",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 13,
+      "chr": 14,
+      "start": 0,
+      "end": 107043718,
+      "value": 107043718,
+      "level": 1,
+      "name": "Chromosome 14",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 14,
+      "chr": 15,
+      "start": 0,
+      "end": 101991189,
+      "value": 101991189,
+      "level": 1,
+      "name": "Chromosome 15",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 15,
+      "chr": 16,
+      "start": 0,
+      "end": 90338345,
+      "value": 90338345,
+      "level": 1,
+      "name": "Chromosome 16",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 16,
+      "chr": 17,
+      "start": 0,
+      "end": 83257441,
+      "value": 83257441,
+      "level": 1,
+      "name": "Chromosome 17",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 17,
+      "chr": 18,
+      "start": 0,
+      "end": 80373285,
+      "value": 80373285,
+      "level": 1,
+      "name": "Chromosome 18",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 18,
+      "chr": 19,
+      "start": 0,
+      "end": 58617616,
+      "value": 58617616,
+      "level": 1,
+      "name": "Chromosome 19",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 19,
+      "chr": 20,
+      "start": 0,
+      "end": 64444167,
+      "value": 64444167,
+      "level": 1,
+      "name": "Chromosome 20",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 20,
+      "chr": 21,
+      "start": 0,
+      "end": 46709983,
+      "value": 46709983,
+      "level": 1,
+      "name": "Chromosome 21",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [],
+      "ix": 21,
+      "chr": 22,
+      "start": 0,
+      "end": 50818468,
+      "value": 50818468,
+      "level": 1,
+      "name": "Chromosome 22",
+      "color": "#aaaaaa"
+    },
+    {
+      "items": [
+        {
+          "snps": 9442,
+          "cm": 67.6,
+          "end": 149110942,
+          "start": 65343051,
+          "chr": 3,
+          "name": "T394598"
+        }
+      ],
+      "color": "#66A4D7",
+      "level": 2,
+      "value": 83767891,
+      "end": 149110942,
+      "start": 65343051,
+      "chr": 3,
+      "ix": 22
+    },
+    {
+      "items": [
+        {
+          "snps": 7702,
+          "cm": 60.8,
+          "end": 72097028,
+          "start": 21699475,
+          "chr": 13,
+          "name": "T347044"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 50397553,
+      "end": 72097028,
+      "start": 21699475,
+      "chr": 13,
+      "ix": 23
+    },
+    {
+      "items": [
+        {
+          "snps": 5923,
+          "cm": 50.5,
+          "end": 187508125,
+          "start": 138930175,
+          "chr": 3,
+          "name": "A231213"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 3,
+      "value": 48577950,
+      "end": 187508125,
+      "start": 138930175,
+      "chr": 3,
+      "ix": 24
+    },
+    {
+      "items": [
+        {
+          "snps": 7201,
+          "cm": 49.2,
+          "end": 125766440,
+          "start": 70817475,
+          "chr": 8,
+          "name": "A005641"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 54948965,
+      "end": 125766440,
+      "start": 70817475,
+      "chr": 8,
+      "ix": 25
+    },
+    {
+      "items": [
+        {
+          "snps": 5985,
+          "cm": 44.4,
+          "end": 161772701,
+          "start": 97379352,
+          "chr": 1,
+          "name": "A664879"
+        },
+        {
+          "snps": 5795,
+          "cm": 42.6,
+          "end": 161039609,
+          "start": 97421797,
+          "chr": 1,
+          "name": "A367702"
+        },
+        {
+          "snps": 4827,
+          "cm": 34.1,
+          "end": 157525169,
+          "start": 99199204,
+          "chr": 1,
+          "name": "A129767"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 64393349,
+      "end": 161772701,
+      "start": 97379352,
+      "chr": 1,
+      "ix": 26
+    },
+    {
+      "items": [
+        {
+          "snps": 4898,
+          "cm": 41.7,
+          "end": 167400245,
+          "start": 110252566,
+          "chr": 1,
+          "name": "A424815"
+        },
+        {
+          "snps": 4898,
+          "cm": 41.7,
+          "end": 167400245,
+          "start": 110252566,
+          "chr": 1,
+          "name": "A406074"
+        },
+        {
+          "snps": 4898,
+          "cm": 41.7,
+          "end": 167400245,
+          "start": 110252566,
+          "chr": 1,
+          "name": "A484164"
+        },
+        {
+          "snps": 4898,
+          "cm": 41.7,
+          "end": 167400245,
+          "start": 110252566,
+          "chr": 1,
+          "name": "A198232"
+        },
+        {
+          "snps": 4898,
+          "cm": 41.7,
+          "end": 167400245,
+          "start": 110252566,
+          "chr": 1,
+          "name": "A287549"
+        },
+        {
+          "snps": 4786,
+          "cm": 40.3,
+          "end": 163648290,
+          "start": 105954183,
+          "chr": 1,
+          "name": "T688561"
+        },
+        {
+          "snps": 4648,
+          "cm": 39.5,
+          "end": 163453114,
+          "start": 106571599,
+          "chr": 1,
+          "name": "A118122"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 3,
+      "value": 57147679,
+      "end": 167400245,
+      "start": 110252566,
+      "chr": 1,
+      "ix": 27
+    },
+    {
+      "items": [
+        {
+          "snps": 5644,
+          "cm": 41.5,
+          "end": 104250176,
+          "start": 58857260,
+          "chr": 8,
+          "name": "A511815"
+        },
+        {
+          "snps": 5676,
+          "cm": 41.4,
+          "end": 104211113,
+          "start": 58857456,
+          "chr": 8,
+          "name": "T421968"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 3,
+      "value": 45392916,
+      "end": 104250176,
+      "start": 58857260,
+      "chr": 8,
+      "ix": 28
+    },
+    {
+      "items": [
+        {
+          "snps": 4188,
+          "cm": 41.1,
+          "end": 69936115,
+          "start": 40786479,
+          "chr": 17,
+          "name": "A918812"
+        },
+        {
+          "snps": 3365,
+          "cm": 32.8,
+          "end": 68675971,
+          "start": 45397855,
+          "chr": 17,
+          "name": "A361876"
+        },
+        {
+          "snps": 3360,
+          "cm": 32.8,
+          "end": 68675383,
+          "start": 45397855,
+          "chr": 17,
+          "name": "A970112"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 29149636,
+      "end": 69936115,
+      "start": 40786479,
+      "chr": 17,
+      "ix": 29
+    },
+    {
+      "items": [
+        {
+          "snps": 6407,
+          "cm": 40.9,
+          "end": 124733123,
+          "start": 70643537,
+          "chr": 6,
+          "name": "A788852"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 54089586,
+      "end": 124733123,
+      "start": 70643537,
+      "chr": 6,
+      "ix": 30
+    },
+    {
+      "items": [
+        {
+          "snps": 4261,
+          "cm": 39.6,
+          "end": 70583781,
+          "start": 45937043,
+          "chr": 18,
+          "name": "A416531"
+        },
+        {
+          "snps": 3950,
+          "cm": 34.6,
+          "end": 68639199,
+          "start": 44754451,
+          "chr": 18,
+          "name": "A392814"
+        },
+        {
+          "snps": 3804,
+          "cm": 30.8,
+          "end": 66244055,
+          "start": 44799922,
+          "chr": 18,
+          "name": "A708953"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 24646738,
+      "end": 70583781,
+      "start": 45937043,
+      "chr": 18,
+      "ix": 31
+    },
+    {
+      "items": [
+        {
+          "snps": 4402,
+          "cm": 39.4,
+          "end": 226631911,
+          "start": 191739472,
+          "chr": 2,
+          "name": "T584466"
+        },
+        {
+          "snps": 4252,
+          "cm": 34.8,
+          "end": 221802847,
+          "start": 190131392,
+          "chr": 2,
+          "name": "A385321"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 34892439,
+      "end": 226631911,
+      "start": 191739472,
+      "chr": 2,
+      "ix": 32
+    },
+    {
+      "items": [
+        {
+          "snps": 4574,
+          "cm": 38.9,
+          "end": 44408368,
+          "start": 13715365,
+          "chr": 11,
+          "name": "A634021"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 30693003,
+      "end": 44408368,
+      "start": 13715365,
+      "chr": 11,
+      "ix": 33
+    },
+    {
+      "items": [
+        {
+          "snps": 4423,
+          "cm": 37.5,
+          "end": 161774968,
+          "start": 105253217,
+          "chr": 1,
+          "name": "A739462"
+        },
+        {
+          "snps": 4408,
+          "cm": 37.3,
+          "end": 161773182,
+          "start": 105446771,
+          "chr": 1,
+          "name": "A908679"
+        },
+        {
+          "snps": 4421,
+          "cm": 37.3,
+          "end": 161773182,
+          "start": 105446771,
+          "chr": 1,
+          "name": "A038734"
+        },
+        {
+          "snps": 4800,
+          "cm": 37.3,
+          "end": 161633478,
+          "start": 105056444,
+          "chr": 1,
+          "name": "M079687"
+        },
+        {
+          "snps": 4782,
+          "cm": 36.9,
+          "end": 161633478,
+          "start": 105446771,
+          "chr": 1,
+          "name": "M074915"
+        },
+        {
+          "snps": 4625,
+          "cm": 34.7,
+          "end": 161682338,
+          "start": 107874368,
+          "chr": 1,
+          "name": "A862976"
+        },
+        {
+          "snps": 3893,
+          "cm": 31.6,
+          "end": 158085137,
+          "start": 103482921,
+          "chr": 1,
+          "name": "A037972"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 4,
+      "value": 56521751,
+      "end": 161774968,
+      "start": 105253217,
+      "chr": 1,
+      "ix": 34
+    },
+    {
+      "items": [
+        {
+          "snps": 4526,
+          "cm": 37.4,
+          "end": 78325465,
+          "start": 34091451,
+          "chr": 4,
+          "name": "A154706"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 44234014,
+      "end": 78325465,
+      "start": 34091451,
+      "chr": 4,
+      "ix": 35
+    },
+    {
+      "items": [
+        {
+          "snps": 5615,
+          "cm": 35.9,
+          "end": 123695985,
+          "start": 77982322,
+          "chr": 8,
+          "name": "A775042"
+        },
+        {
+          "snps": 4966,
+          "cm": 32.5,
+          "end": 119539518,
+          "start": 74798794,
+          "chr": 8,
+          "name": "T226956"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 4,
+      "value": 45713663,
+      "end": 123695985,
+      "start": 77982322,
+      "chr": 8,
+      "ix": 36
+    },
+    {
+      "items": [
+        {
+          "snps": 3577,
+          "cm": 35.8,
+          "end": 100608884,
+          "start": 81632477,
+          "chr": 14,
+          "name": "T630148"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 18976407,
+      "end": 100608884,
+      "start": 81632477,
+      "chr": 14,
+      "ix": 37
+    },
+    {
+      "items": [
+        {
+          "snps": 3667,
+          "cm": 35.6,
+          "end": 240763170,
+          "start": 220627629,
+          "chr": 1,
+          "name": "A686445"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 20135541,
+      "end": 240763170,
+      "start": 220627629,
+      "chr": 1,
+      "ix": 38
+    },
+    {
+      "items": [
+        {
+          "snps": 4984,
+          "cm": 35.5,
+          "end": 49762230,
+          "start": 12834157,
+          "chr": 12,
+          "name": "A671688"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 36928073,
+      "end": 49762230,
+      "start": 12834157,
+      "chr": 12,
+      "ix": 39
+    },
+    {
+      "items": [
+        {
+          "snps": 4448,
+          "cm": 35,
+          "end": 167217765,
+          "start": 115555927,
+          "chr": 1,
+          "name": "A872579"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 5,
+      "value": 51661838,
+      "end": 167217765,
+      "start": 115555927,
+      "chr": 1,
+      "ix": 40
+    },
+    {
+      "items": [
+        {
+          "snps": 4010,
+          "cm": 34.8,
+          "end": 50536171,
+          "start": 27297766,
+          "chr": 13,
+          "name": "A711145"
+        },
+        {
+          "snps": 4184,
+          "cm": 30.7,
+          "end": 52829614,
+          "start": 29667250,
+          "chr": 13,
+          "name": "A747354"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 3,
+      "value": 23238405,
+      "end": 50536171,
+      "start": 27297766,
+      "chr": 13,
+      "ix": 41
+    },
+    {
+      "items": [
+        {
+          "snps": 4882,
+          "cm": 34.7,
+          "end": 123091221,
+          "start": 92831231,
+          "chr": 9,
+          "name": "T783687"
+        },
+        {
+          "snps": 4554,
+          "cm": 32.6,
+          "end": 121476444,
+          "start": 93160570,
+          "chr": 9,
+          "name": "T465408"
+        },
+        {
+          "snps": 4384,
+          "cm": 32.4,
+          "end": 118211868,
+          "start": 90870420,
+          "chr": 9,
+          "name": "A917445"
+        },
+        {
+          "snps": 4589,
+          "cm": 32.3,
+          "end": 121317472,
+          "start": 93160570,
+          "chr": 9,
+          "name": "T262751"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 30259990,
+      "end": 123091221,
+      "start": 92831231,
+      "chr": 9,
+      "ix": 42
+    },
+    {
+      "items": [
+        {
+          "snps": 4559,
+          "cm": 34.2,
+          "end": 58825788,
+          "start": 28722465,
+          "chr": 13,
+          "name": "T793573"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 4,
+      "value": 30103323,
+      "end": 58825788,
+      "start": 28722465,
+      "chr": 13,
+      "ix": 43
+    },
+    {
+      "items": [
+        {
+          "snps": 1637,
+          "cm": 34,
+          "end": 26498347,
+          "start": 15434720,
+          "chr": 22,
+          "name": "M093354"
+        },
+        {
+          "snps": 1634,
+          "cm": 34,
+          "end": 26498347,
+          "start": 15434720,
+          "chr": 22,
+          "name": "M161945"
+        },
+        {
+          "snps": 1756,
+          "cm": 29.5,
+          "end": 25755790,
+          "start": 15607461,
+          "chr": 22,
+          "name": "A540554"
+        },
+        {
+          "snps": 2140,
+          "cm": 29.5,
+          "end": 26040703,
+          "start": 15817310,
+          "chr": 22,
+          "name": "A053906"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 11063627,
+      "end": 26498347,
+      "start": 15434720,
+      "chr": 22,
+      "ix": 44
+    },
+    {
+      "items": [
+        {
+          "snps": 4413,
+          "cm": 33.9,
+          "end": 156174100,
+          "start": 96652734,
+          "chr": 1,
+          "name": "A024716"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 6,
+      "value": 59521366,
+      "end": 156174100,
+      "start": 96652734,
+      "chr": 1,
+      "ix": 45
+    },
+    {
+      "items": [
+        {
+          "snps": 5098,
+          "cm": 33.8,
+          "end": 63876718,
+          "start": 21550846,
+          "chr": 10,
+          "name": "A452524"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 42325872,
+      "end": 63876718,
+      "start": 21550846,
+      "chr": 10,
+      "ix": 46
+    },
+    {
+      "items": [
+        {
+          "snps": 3049,
+          "cm": 33.7,
+          "end": 109426683,
+          "start": 73590100,
+          "chr": 5,
+          "name": "M074135"
+        },
+        {
+          "snps": 4173,
+          "cm": 33.7,
+          "end": 109429310,
+          "start": 73605019,
+          "chr": 5,
+          "name": "A759154"
+        },
+        {
+          "snps": 3987,
+          "cm": 32.7,
+          "end": 108642150,
+          "start": 73882800,
+          "chr": 5,
+          "name": "A429957"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 35836583,
+      "end": 109426683,
+      "start": 73590100,
+      "chr": 5,
+      "ix": 47
+    },
+    {
+      "items": [
+        {
+          "snps": 3732,
+          "cm": 33.6,
+          "end": 38990131,
+          "start": 14084069,
+          "chr": 11,
+          "name": "A885074"
+        },
+        {
+          "snps": 3898,
+          "cm": 33.4,
+          "end": 37607825,
+          "start": 13715365,
+          "chr": 11,
+          "name": "M905224"
+        },
+        {
+          "snps": 3957,
+          "cm": 32.6,
+          "end": 37102227,
+          "start": 13953262,
+          "chr": 11,
+          "name": "A148083"
+        },
+        {
+          "snps": 3615,
+          "cm": 32.3,
+          "end": 36831155,
+          "start": 13715365,
+          "chr": 11,
+          "name": "A788586"
+        },
+        {
+          "snps": 3568,
+          "cm": 32.2,
+          "end": 36895349,
+          "start": 14084069,
+          "chr": 11,
+          "name": "A384509"
+        },
+        {
+          "snps": 3576,
+          "cm": 32.2,
+          "end": 36895349,
+          "start": 14084069,
+          "chr": 11,
+          "name": "A150640"
+        },
+        {
+          "snps": 3594,
+          "cm": 32.1,
+          "end": 36668410,
+          "start": 13715365,
+          "chr": 11,
+          "name": "A513677"
+        },
+        {
+          "snps": 3566,
+          "cm": 32.1,
+          "end": 36831155,
+          "start": 14084069,
+          "chr": 11,
+          "name": "A897888"
+        },
+        {
+          "snps": 3513,
+          "cm": 31.7,
+          "end": 36895349,
+          "start": 14874884,
+          "chr": 11,
+          "name": "A328992"
+        },
+        {
+          "snps": 3504,
+          "cm": 29.4,
+          "end": 35341008,
+          "start": 14084069,
+          "chr": 11,
+          "name": "A561274"
+        }
+      ],
+      "color": "#d1a457",
+      "level": 3,
+      "value": 24906062,
+      "end": 38990131,
+      "start": 14084069,
+      "chr": 11,
+      "ix": 48
+    },
+    {
+      "items": [
+        {
+          "snps": 3468,
+          "cm": 32.4,
+          "end": 37659138,
+          "start": 21888677,
+          "chr": 13,
+          "name": "A826655"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 5,
+      "value": 15770461,
+      "end": 37659138,
+      "start": 21888677,
+      "chr": 13,
+      "ix": 49
+    },
+    {
+      "items": [
+        {
+          "snps": 2354,
+          "cm": 32,
+          "end": 11179760,
+          "start": 344857,
+          "chr": 17,
+          "name": "A617665"
+        },
+        {
+          "snps": 2298,
+          "cm": 31.7,
+          "end": 10506688,
+          "start": 13546,
+          "chr": 17,
+          "name": "A367249"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 10834903,
+      "end": 11179760,
+      "start": 344857,
+      "chr": 17,
+      "ix": 50
+    },
+    {
+      "items": [
+        {
+          "snps": 1841,
+          "cm": 31.5,
+          "end": 28474643,
+          "start": 13523286,
+          "chr": 21,
+          "name": "M048724"
+        },
+        {
+          "snps": 2479,
+          "cm": 29.8,
+          "end": 27634659,
+          "start": 13591802,
+          "chr": 21,
+          "name": "A622149"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 14951357,
+      "end": 28474643,
+      "start": 13523286,
+      "chr": 21,
+      "ix": 51
+    },
+    {
+      "items": [
+        {
+          "snps": 4327,
+          "cm": 31.5,
+          "end": 36043273,
+          "start": 10966346,
+          "chr": 3,
+          "name": "A123662"
+        },
+        {
+          "snps": 4166,
+          "cm": 29.8,
+          "end": 31455118,
+          "start": 9083056,
+          "chr": 3,
+          "name": "A271656"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 25076927,
+      "end": 36043273,
+      "start": 10966346,
+      "chr": 3,
+      "ix": 52
+    },
+    {
+      "items": [
+        {
+          "snps": 3829,
+          "cm": 31.4,
+          "end": 57803015,
+          "start": 31505941,
+          "chr": 15,
+          "name": "H170679"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 26297074,
+      "end": 57803015,
+      "start": 31505941,
+      "chr": 15,
+      "ix": 53
+    },
+    {
+      "items": [
+        {
+          "snps": 2860,
+          "cm": 31.3,
+          "end": 156964439,
+          "start": 133913222,
+          "chr": 6,
+          "name": "M856267"
+        },
+        {
+          "snps": 3846,
+          "cm": 31.3,
+          "end": 156964439,
+          "start": 133913222,
+          "chr": 6,
+          "name": "A835594"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 23051217,
+      "end": 156964439,
+      "start": 133913222,
+      "chr": 6,
+      "ix": 54
+    },
+    {
+      "items": [
+        {
+          "snps": 3957,
+          "cm": 30.9,
+          "end": 92398290,
+          "start": 68508737,
+          "chr": 14,
+          "name": "A401533"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 3,
+      "value": 23889553,
+      "end": 92398290,
+      "start": 68508737,
+      "chr": 14,
+      "ix": 55
+    },
+    {
+      "items": [
+        {
+          "snps": 3242,
+          "cm": 30.1,
+          "end": 132569267,
+          "start": 118431145,
+          "chr": 11,
+          "name": "A619253"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 14138122,
+      "end": 132569267,
+      "start": 118431145,
+      "chr": 11,
+      "ix": 56
+    },
+    {
+      "items": [
+        {
+          "snps": 4848,
+          "cm": 29.7,
+          "end": 110008750,
+          "start": 74836081,
+          "chr": 11,
+          "name": "T656931"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 35172669,
+      "end": 110008750,
+      "start": 74836081,
+      "chr": 11,
+      "ix": 57
+    },
+    {
+      "items": [
+        {
+          "snps": 3349,
+          "cm": 29.6,
+          "end": 72141987,
+          "start": 36783818,
+          "chr": 13,
+          "name": "M141523"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 5,
+      "value": 35358169,
+      "end": 72141987,
+      "start": 36783818,
+      "chr": 13,
+      "ix": 58
+    },
+    {
+      "items": [
+        {
+          "snps": 3718,
+          "cm": 29.5,
+          "end": 46728094,
+          "start": 22263601,
+          "chr": 6,
+          "name": "M030763"
+        },
+        {
+          "snps": 4606,
+          "cm": 29.5,
+          "end": 46733594,
+          "start": 22263601,
+          "chr": 6,
+          "name": "T827121"
+        },
+        {
+          "snps": 5420,
+          "cm": 29.5,
+          "end": 46733594,
+          "start": 22263601,
+          "chr": 6,
+          "name": "A200225"
+        },
+        {
+          "snps": 5314,
+          "cm": 28.8,
+          "end": 46007801,
+          "start": 22263601,
+          "chr": 6,
+          "name": "A108328"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 24464493,
+      "end": 46728094,
+      "start": 22263601,
+      "chr": 6,
+      "ix": 59
+    },
+    {
+      "items": [
+        {
+          "snps": 2804,
+          "cm": 29.4,
+          "end": 46899964,
+          "start": 35197309,
+          "chr": 21,
+          "name": "A970104"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 11702655,
+      "end": 46899964,
+      "start": 35197309,
+      "chr": 21,
+      "ix": 60
+    },
+    {
+      "items": [
+        {
+          "snps": 1632,
+          "cm": 29.3,
+          "end": 21147042,
+          "start": 6475543,
+          "chr": 18,
+          "name": "M382518"
+        },
+        {
+          "snps": 2361,
+          "cm": 29.3,
+          "end": 21330486,
+          "start": 6546648,
+          "chr": 18,
+          "name": "A119640"
+        },
+        {
+          "snps": 2357,
+          "cm": 29.3,
+          "end": 21141057,
+          "start": 6486923,
+          "chr": 18,
+          "name": "A499417"
+        },
+        {
+          "snps": 2352,
+          "cm": 29.2,
+          "end": 21141057,
+          "start": 6501191,
+          "chr": 18,
+          "name": "A502414"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 14671499,
+      "end": 21147042,
+      "start": 6475543,
+      "chr": 18,
+      "ix": 61
+    },
+    {
+      "items": [
+        {
+          "snps": 3591,
+          "cm": 28.8,
+          "end": 68384366,
+          "start": 33786709,
+          "chr": 4,
+          "name": "A522385"
+        },
+        {
+          "snps": 3591,
+          "cm": 28.8,
+          "end": 68384366,
+          "start": 33786709,
+          "chr": 4,
+          "name": "A338164"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 3,
+      "value": 34597657,
+      "end": 68384366,
+      "start": 33786709,
+      "chr": 4,
+      "ix": 62
+    },
+    {
+      "items": [
+        {
+          "snps": 3592,
+          "cm": 28.8,
+          "end": 145351331,
+          "start": 115746236,
+          "chr": 2,
+          "name": "A678626"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 29605095,
+      "end": 145351331,
+      "start": 115746236,
+      "chr": 2,
+      "ix": 63
+    },
+    {
+      "items": [
+        {
+          "snps": 2783,
+          "cm": 28.4,
+          "end": 19732926,
+          "start": 4253297,
+          "chr": 12,
+          "name": "A814067"
+        },
+        {
+          "snps": 2783,
+          "cm": 28.4,
+          "end": 19732926,
+          "start": 4253297,
+          "chr": 12,
+          "name": "A391881"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 3,
+      "value": 15479629,
+      "end": 19732926,
+      "start": 4253297,
+      "chr": 12,
+      "ix": 64
+    },
+    {
+      "items": [
+        {
+          "snps": 3394,
+          "cm": 28.4,
+          "end": 161228342,
+          "start": 111855889,
+          "chr": 1,
+          "name": "T609717"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 7,
+      "value": 49372453,
+      "end": 161228342,
+      "start": 111855889,
+      "chr": 1,
+      "ix": 65
+    },
+    {
+      "items": [
+        {
+          "snps": 4282,
+          "cm": 28.4,
+          "end": 205492073,
+          "start": 169853519,
+          "chr": 2,
+          "name": "A421726"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 3,
+      "value": 35638554,
+      "end": 205492073,
+      "start": 169853519,
+      "chr": 2,
+      "ix": 66
+    },
+    {
+      "items": [
+        {
+          "snps": 2799,
+          "cm": 28.4,
+          "end": 69936115,
+          "start": 52036041,
+          "chr": 17,
+          "name": "A380937"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 3,
+      "value": 17900074,
+      "end": 69936115,
+      "start": 52036041,
+      "chr": 17,
+      "ix": 67
+    },
+    {
+      "items": [
+        {
+          "snps": 2126,
+          "cm": 28.3,
+          "end": 158737504,
+          "start": 147516467,
+          "chr": 7,
+          "name": "M872239"
+        },
+        {
+          "snps": 2109,
+          "cm": 28.2,
+          "end": 158737504,
+          "start": 147562262,
+          "chr": 7,
+          "name": "T282740"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 2,
+      "value": 11221037,
+      "end": 158737504,
+      "start": 147516467,
+      "chr": 7,
+      "ix": 68
+    },
+    {
+      "items": [
+        {
+          "snps": 3627,
+          "cm": 28.2,
+          "end": 125843145,
+          "start": 97396405,
+          "chr": 8,
+          "name": "A255440"
+        }
+      ],
+      "color": "#eeeeee",
+      "level": 5,
+      "value": 28446740,
+      "end": 125843145,
+      "start": 97396405,
+      "chr": 8,
+      "ix": 69
+    }
   ]
 }

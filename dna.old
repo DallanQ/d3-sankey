@@ -1,0 +1,27 @@
+{
+  "nodes":[
+    {"name":"Chromosome 1","value": 20},
+    {"name":"Chromosome 2","value": 25},
+    {"name":"Chromosome 3","value": 15},
+    {"name":"Match 1"},
+    {"name":"Match 2"},
+    {"name":"Match 3"},
+    {"name":"Match 4"},
+    {"name":"Match 5"},
+    {"name":"Match 6"},
+    {"name":"Match 7"}
+  ],
+  "links":[
+    {"source":0,"target":3,"value":5,"sourcePos":2,"targetPos":0},
+    {"source":0,"target":3,"value":2,"sourcePos":10,"targetPos":5},
+    {"source":1,"target":3,"value":9,"sourcePos":2,"targetPos":7},
+    {"source":1,"target":4,"value":3,"sourcePos":15,"targetPos":0},
+    {"source":1,"target":5,"value":2,"sourcePos":20,"targetPos":0},
+    {"source":2,"target":5,"value":3,"sourcePos":0,"targetPos":2},
+    {"source":2,"target":6,"value":5,"sourcePos":5,"targetPos":0},
+    {"source":2,"target":8,"value":1,"sourcePos":12,"targetPos":0},
+    {"source":3,"target":7,"value":1,"sourcePos":0,"targetPos":0},
+    {"source":5,"target":7,"value":1,"sourcePos":2,"targetPos":1},
+    {"source":7,"target":9,"value":0.5,"sourcePos":1,"targetPos":0}
+  ]
+}
