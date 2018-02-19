@@ -79,65 +79,48 @@ export default function () {
       d.generatedID = 'ID' + i;
     });
   }
+
+  //Apply custom recomputations and reorder nodes
   function recomputeLinkPosAndArrangeNodes(graph) {
-    //Modify link start positions
-    graph.links.forEach(l => {
-      var linkHeight = Math.max(1, l.width);
-      var nodeHeight = l.source.y1 - l.source.y0;
-      var diff = l.sourcePos / l.source.value * nodeHeight + linkHeight / 2;
-      l.y0 = l.source.y0 + diff;
-    });
+    var chromosomes = {};
 
-    //Store each link's target node proportions values incremental sum
-    var targetNodeLinkProportions = {};
-    graph.links.forEach(l => {
-      if (!targetNodeLinkProportions[l.target.generatedID]) targetNodeLinkProportions[l.target.generatedID] = 0;
-      targetNodeLinkProportions[l.target.generatedID] += l.value;
-    });
-
-    // Modify link's end positions
-    graph.links.forEach(l => {
-      var linkHeight = Math.max(1, l.width);
-      var nodeHeight = l.target.y1 - l.target.y0;
-      var diff = l.targetPos / targetNodeLinkProportions[l.target.generatedID] * nodeHeight + linkHeight / 2;
-      l.y1 = l.target.y0 + diff;
-    });
-
-
-    //Store  ordering of nodes based on new link ordering
+    // Structurise nodes per chromosome and per level
     graph.nodes.forEach(node => {
-      var neighbourSourceLinks = node.sourceLinks
-        .filter(sl => (sl.target.level - 1) == node.level)
-        .$orderBy(d => d.y0);
-      neighbourSourceLinks.forEach((sourceLink, i) => {
-        sourceLink.target.orderNumber = i + 1;
-      })
-    });
-
-
-    // Replace target node positions 
-    // Replace target and source link positions based on ordered result
-    graph.nodes.forEach(node => {
-      var oneLevelConnectedNodes = node.sourceLinks
-        .filter(sl => (sl.target.level - 1) == node.level)
-        .map(d => d.target);
-      var startNodeY = d3.min(oneLevelConnectedNodes, d => d.y0);
-      oneLevelConnectedNodes.$orderBy(d => d.orderNumber);
-      //Replace positions
-      oneLevelConnectedNodes.forEach(d => {
-        var height = d.y1 - d.y0;
-        var change = startNodeY - d.y0;
-        d.y0 = startNodeY;
-        d.y1 = startNodeY + height;
-        d.targetLinks.forEach(d => {
-          d.y1 += change;
-        })
-        d.sourceLinks.forEach(d => {
-          d.y0 += change;
-        })
-        startNodeY += (py + height);
-      });
+      if (!chromosomes[node.chr]) {
+        chromosomes[node.chr] = {};
+      }
+      if (!chromosomes[node.chr][node.level]) {
+        chromosomes[node.chr][node.level] = []
+      }
+      chromosomes[node.chr][node.level].push(node);
     })
+
+    // Order nodes based on startAbs property
+    Object.keys(chromosomes).forEach(index => {
+      var chromosome = chromosomes[index];
+      var levels = Object.keys(chromosome);
+      levels.forEach(level => {
+        var levelNodes = chromosome[level];
+        var startNodeY = d3.min(levelNodes, d => d.y0);
+        levelNodes.$orderBy(d => d.startAbs);
+
+        //Replace positions
+        levelNodes.forEach(d => {
+          var height = d.y1 - d.y0;
+          var change = startNodeY - d.y0;
+          d.y0 = startNodeY;
+          d.y1 = startNodeY + height;
+          startNodeY += (py + height);
+        });
+      })
+    })
+
+    // Re set link positions
+    graph.links.forEach(l => {
+      l.y0 = (l.source.y1 - l.source.y0) / l.source.value * l.sourcePos + l.source.y0 + Math.max(1, l.width) / 2;
+      l.y1 = (l.target.y1 - l.target.y0) / l.target.value * l.targetPos + l.target.y0 + Math.max(1, l.width) / 2;
+    })
+
 
     //Update first level node paddings
     var nodes = graph.nodes
@@ -168,9 +151,9 @@ export default function () {
       });
     });
 
+    //Recursive function which updates child node positions
     function updatePosition(d, posIncrease) {
       if (d.positionUpdated) return;
-
       d.positionUpdated = true;
       d.y0 += posIncrease;
       d.y1 += posIncrease;
@@ -180,15 +163,11 @@ export default function () {
       d.targetLinks.forEach(s => {
         s.y1 += posIncrease;
       });
-
       d.sourceLinks.map(s => s.target)
         .forEach(t => {
           updatePosition(t, posIncrease - diff)
         })
-
     }
-
-
   }
 
   // not needed if we not relax from right to left

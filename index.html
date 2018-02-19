@@ -78,6 +78,14 @@
         .attr("x", function (d) { return d.x1 + 6; })
         .attr("text-anchor", "start");
 
+      // node.append("text")
+      //   .attr("x", function (d) { return d.x0 })
+      //   .attr("y", function (d) { return d.y0+7 })
+      //   .attr("dy", "0.35em")
+      //   .attr("text-anchor", "end")
+      //   .text(function (d) { return d.startAbs; })
+      //   .attr("text-anchor", "start")
+
       node.append("title")
         .text(function (d) { return d.name + "\n" + format(d.value); });
 
