@@ -8,7 +8,7 @@
 
 <body>
   <!DOCTYPE html>
-  <svg width="1000" height="8000"></svg>
+  <svg width="1000" height="3000"></svg>
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="build/d3-sankey.js"></script>
   <script>
@@ -24,7 +24,8 @@
     var sankey = d3.sankey()
       .nodeAlign(d3.sankeyLeft)
       .nodeWidth(15)
-      .nodePadding(10)
+      .firstLevelNodePadding(120)
+      .nodePadding(5)
       .extent([[1, 1], [width - 1, height - 6]]);
 
     var link = svg.append("g")
@@ -47,7 +48,8 @@
 
       link = link
         .data(dna.links)
-        .enter().append("path")
+        .enter()
+        .append("path")
         .attr("d", d3.sankeyLinkHorizontal())
         .attr("stroke-width", function (d) { return Math.max(1, d.width); });
 
@@ -78,6 +80,8 @@
 
       node.append("title")
         .text(function (d) { return d.name + "\n" + format(d.value); });
+
+      svg.attr('height', d3.max(dna.nodes, d => d.y1))
     });
 
   </script>

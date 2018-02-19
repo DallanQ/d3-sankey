@@ -53,6 +53,7 @@ export default function () {
   var x0 = 0, y0 = 0, x1 = 1, y1 = 1, // extent
     dx = 24, // nodeWidth
     py = 8, // nodePadding
+    firstLevelNodePadding = 0,
     id = defaultId,
     align = justify,
     nodes = defaultNodes,
@@ -136,11 +137,57 @@ export default function () {
         })
         startNodeY += (py + height);
       });
-
-      // 
-
-
     })
+
+    //Update first level node paddings
+    var nodes = graph.nodes
+      .filter(d => d.level == 1);
+    var diff = 0;
+    nodes.forEach((d, i) => {
+      var posIncrease = i * (firstLevelNodePadding);
+      var diff = 10;
+      if (d.sourceLinks) {
+        var link = d.sourceLinks.filter(s => s.target.level == 2)[0];
+        if (link && link.target) {
+          diff += (link.target.y0 - d.y0) - firstLevelNodePadding / 2;
+        }
+      }
+      if (i < 3) {
+        diff = 0;
+      }
+      d.sourceLinks.map(s => s.target)
+        .forEach(t => {
+          updatePosition(t, posIncrease - diff)
+        })
+      // Update child positions as well
+      d.positionUpdated = true;
+      d.y0 += posIncrease;
+      d.y1 += posIncrease;
+      d.sourceLinks.forEach(s => {
+        s.y0 += posIncrease;
+      });
+    });
+
+    function updatePosition(d, posIncrease) {
+      if (d.positionUpdated) return;
+
+      d.positionUpdated = true;
+      d.y0 += posIncrease;
+      d.y1 += posIncrease;
+      d.sourceLinks.forEach(s => {
+        s.y0 += posIncrease;
+      });
+      d.targetLinks.forEach(s => {
+        s.y1 += posIncrease;
+      });
+
+      d.sourceLinks.map(s => s.target)
+        .forEach(t => {
+          updatePosition(t, posIncrease - diff)
+        })
+
+    }
+
 
   }
 
@@ -175,6 +222,10 @@ export default function () {
 
   sankey.nodePadding = function (_) {
     return arguments.length ? (py = +_, sankey) : py;
+  };
+
+  sankey.firstLevelNodePadding = function (_) {
+    return arguments.length ? (firstLevelNodePadding = +_, sankey) : firstLevelNodePadding;
   };
 
   sankey.nodes = function (_) {
